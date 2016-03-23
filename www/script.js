@@ -106,20 +106,18 @@ $stateProvider
 
 
 function updateTextInput(val) {
-   document.getElementById('textInput').value=""
-   document.getElementById('textarea').value=""
+   document.getElementById('textarea').value="";
+
 
       if (val == 15 ) 
       {
-          document.getElementById('textInput').value="Titulo do Hino 15"; 
-          document.getElementById('textarea').value="1. Cilo ngenda ha pekela Anjovoli,\n    mandulaNdomo ove wa ndava.\n\n2. Wa Òuatisa utanya wosi;\n    Wa Òuatela ohenda;\n    Wa mbuilisa ombebua.\n\n3. Wa ngendisa lekolelo.\n    Wa neyuila kayonjo.\n    Wa ngavela ongusu.\n\n4.  Ndo njevise ondaka yove,\n    Si panduila eyovo\n    Loku kuama esunga.\n\n5. Kolowola viowelema\n     Ndave, a —ala, lohenda,\n    Toke ku ca omele.\n\n6.  Eci ndi pekela otulo\n     Tuna tua sulako\n     Masukile kulamba."; 
+         
+          document.getElementById('textarea').innerHTML="Titulo do Hino 15 <p> <pre>  1. Cilo ngenda ha pekela AnjovolimandulaNdomo ove wa ndava.</p> <p> 2. Wa Òuatisa utanya wosi;<p>    Wa Òuatela ohenda </p> ;\n    Wa mbuilisa ombebua.\n\n3. Wa ngendisa lekolelo.\n    Wa neyuila kayonjo.\n    Wa ngavela ongusu.\n\n4.  Ndo njevise ondaka yove,\n    Si panduila eyovo\n    Loku kuama esunga.\n\n5. Kolowola viowelema\n     Ndave, a —ala, lohenda,\n    Toke ku ca omele.\n\n6.  Eci ndi pekela otulo\n     Tuna tua sulako\n     Masukile kulamba."; 
 
-          
        
       } 
       else if (val == 16 ){
-          document.getElementById('textInput').value="Titulo do Hino 16"; 
-           document.getElementById('textarea').value="Hino nº 16 \n 1. Cilo ngenda ha pekela Anjovoli,\n    mandulaNdomo ove wa ndava.\n\n2. Wa Òuatisa utanya wosi;\n    Wa Òuatela ohenda;\n    Wa mbuilisa ombebua.\n\n3. Wa ngendisa lekolelo.\n    Wa neyuila kayonjo.\n    Wa ngavela ongusu.\n\n4.  Ndo njevise ondaka yove,\n    Si panduila eyovo\n    Loku kuama esunga.\n\n5. Kolowola viowelema\n     Ndave, a —ala, lohenda,\n    Toke ku ca omele.\n\n6.  Eci ndi pekela otulo\n     Tuna tua sulako\n     Masukile kulamba."; 
+           document.getElementById('textarea').innerHTML="Hino nº 16 \n 1. Cilo ngenda ha pekela Anjovoli,\n    mandulaNdomo ove wa ndava.\n\n2. Wa Òuatisa utanya wosi;\n    Wa Òuatela ohenda;\n    Wa mbuilisa ombebua.\n\n3. Wa ngendisa lekolelo.\n    Wa neyuila kayonjo.\n    Wa ngavela ongusu.\n\n4.  Ndo njevise ondaka yove,\n    Si panduila eyovo\n    Loku kuama esunga.\n\n5. Kolowola viowelema\n     Ndave, a —ala, lohenda,\n    Toke ku ca omele.\n\n6.  Eci ndi pekela otulo\n     Tuna tua sulako\n     Masukile kulamba."; 
 
       }
     }
