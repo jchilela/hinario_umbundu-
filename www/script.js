@@ -1,7 +1,7 @@
-angular.module('myApp', ['ionic'])
-
+angular.module('myApp', ['ionic',"ngAnimate", "ngAria",'ngMaterial'])
 .config(['$stateProvider', '$urlRouterProvider',
-  function($stateProvider, $urlRouterProvider) {
+  function($stateProvider, $urlRouterProvider, $mdGestureProvider) {
+
 
     $stateProvider
       .state('home', {
@@ -25,8 +25,12 @@ $stateProvider
         controller: 'AboutController'
       });
 
+
+
+
     $urlRouterProvider.otherwise('/home');
 
+    
   }
 ])
 
@@ -99,7 +103,14 @@ $stateProvider
     $scope.rightButtons = [];
 
   }
-]);
+])
+
+
+
+.config(function( $mdGestureProvider ) {
+          $mdGestureProvider.skipClickHijack();
+      });
+
 
 
 
@@ -123,21 +134,9 @@ function updateTextInput(val) {
     }
 
 
-function setValue(){
-        var temp = localStorage.getItem('temp');
-        document.getElementById("temp").value = temp;
-        document.getElementById("textInput").value = temp;
-        
-}
-       
-
-        function save(){
-
-                    var temp= document.getElementById("temp").value;
-                    localStorage.setItem('temp', temp);
 
 
-                }
+
 
 
         function redirect(){
